@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { GlobalHotKeys } from "react-hotkeys";
 import confetti from "./confetti.js"
