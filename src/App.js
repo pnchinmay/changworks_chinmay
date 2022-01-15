@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { GlobalHotKeys } from "react-hotkeys";
+import confetti from "./confetti.js"
 
 function App() {
+  const keyMap = { 
+              HotKeys: [
+                      "c h a n g w o r k s",
+                      "C H A N G W O R K S",
+                      "h e l l o",
+              ],
+  };
+  const handlers = {
+              HotKeys: () => confetti(),
+  };
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalHotKeys keyMap={keyMap} handlers={handlers} root={true} play>
+      <div>Type "changworks"</div>
+      <div className="App">
+      </div>
+    </GlobalHotKeys>
   );
 }
 
