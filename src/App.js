@@ -18,10 +18,11 @@ function App() {
  
   return (
     <>
-    <GlobalHotKeys keyMap={keyMap} handlers={handlers} />
-    <div>
-      <h1>Type "changworks"</h1>
-    </div>
+    <GlobalHotKeys keyMap={keyMap} handlers={handlers}>
+      <div>
+        <h1>Type "changworks"</h1>
+      </div>
+    </GlobalHotKeys>
     </>
   );
 }

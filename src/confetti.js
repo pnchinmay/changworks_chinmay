@@ -15,9 +15,9 @@ const myConfetti = () => {
         let x = Math.random() * (max-min) + min;
         return x;
     }
-    function randomyPosition() {
-        return Math.random() - 0.1;
-    }
+    // function randomyPosition() {
+    //     return Math.random() - 0.1;
+    // }
     var interval = setInterval(function() {
     var timeLeft = end - Date.now();
     if(timeLeft<=0) {
