@@ -1,6 +1,6 @@
 import "./App.css";
 import { GlobalHotKeys } from "react-hotkeys";
-import confetti from "./confetti.js"
+import myConfetti from "./confetti.js"
 
 function App() {
   const keyMap = { 
@@ -13,11 +13,11 @@ function App() {
               ],
   };
   const handlers = {
-              HotKeys: () => confetti(),
+              HotKeys: () => myConfetti(),
   };
  
   return (
-    <GlobalHotKeys keyMap={keyMap} handlers={handlers}>
+    <GlobalHotKeys keyMap={keyMap} handlers={handlers} root={true} play>
       <div>
         <h1>Type "changworks"</h1>
       </div>

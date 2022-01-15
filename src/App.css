@@ -5,9 +5,21 @@
 
 body {
   background: var(--bgColor);
+  /* transform: translate(50%,50%); */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: center; */
 }
 
 h1 {
   color: var(--textColor);
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
