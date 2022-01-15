@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root {
 	--bgColor: #282C34;
 	--textColor: #00FF00;
@@ -5,17 +7,12 @@
 
 body {
   background: var(--bgColor);
-  /* transform: translate(50%,50%); */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: auto;
-  align-items: center;
-  justify-content: center; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
   color: var(--textColor);
+  font-size: 4rem;
   position: absolute;
   top: 50%;
   left: 50%;

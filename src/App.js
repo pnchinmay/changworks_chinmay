@@ -17,11 +17,12 @@ function App() {
   };
  
   return (
-    <GlobalHotKeys keyMap={keyMap} handlers={handlers} root={true} play>
-      <div>
-        <h1>Type "changworks"</h1>
-      </div>
-    </GlobalHotKeys>
+    <>
+    <GlobalHotKeys keyMap={keyMap} handlers={handlers} />
+    <div>
+      <h1>Type "changworks"</h1>
+    </div>
+    </>
   );
 }
 
