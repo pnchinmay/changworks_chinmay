@@ -1,4 +1,4 @@
-# Assignment project for ChangWorks
+# Assignment project for ChangWorks [![DeepSource](https://deepsource.io/gh/pnchinmay/changworks_chinmay.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/pnchinmay/changworks_chinmay/?ref=repository-badge)
 
 ## Demo
 https://changworks-chinmay.netlify.app/
